@@ -999,8 +999,7 @@ async def batch_handler(bot: Client, m: Message):
                 await send_video(bot, m, cc, res_file, thumb, name, prog, channel_id)
                 count += 1
                 time.sleep(1)
-                
-            except Exception as e:
+    except Exception as e:
                 logger.error(f"Download error: {e}")
                 await bot.send_message(channel_id, f'⚠️**Downloading Failed**⚠️\n**Name** =>> `{str(count).zfill(3)} {name1}`\n**Url** =>> {url}\n\n<blockquote><i><b>Failed Reason: {str(e)}</b></i></blockquote>', disable_web_page_preview=True)
                 count += 1
