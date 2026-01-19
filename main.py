@@ -1009,7 +1009,6 @@ async def batch_handler(bot: Client, m: Message):
         await bot.send_message(channel_id, f'⚠️**Downloading Failed**⚠️\n**Name** =>> `{str(count).zfill(3)} {name1}`\n**Url** =>> {url}\n\n<blockquote><i><b>Failed Reason: {str(e)}</b></i></blockquote>', disable_web_page_preview=True)
         count += 1
         failed_count += 1
-        continue
 
     except Exception as e:
         await m.reply_text(f"Error: {e}")
