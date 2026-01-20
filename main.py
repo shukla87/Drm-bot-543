@@ -37,7 +37,7 @@ cookies_file_path = os.getenv("cookies_file_path", "youtube_cookies.txt")
 PHOTO_LOGO = 'https://i.ibb.co/hFBKqXhS/file-29385.jpg'
 
 # API Configuration for Clear Key MPD
-CLEAR_KEY_API = "https://itsgolu-v1player.vercel.app/?url="
+CLEAR_KEY_API = "https://itsgolu-v1player.vercel.app/"
 
 # Inline keyboards
 BUTTONSCONTACT = InlineKeyboardMarkup([[InlineKeyboardButton(text="📞 Contact", url="https://t.me/Divyanshshukla7")]])
